@@ -1,7 +1,6 @@
 word_dict = {}
 for _ in range(int(input())):
     word = input()
-    if len(word) <= 1: break
     if word[-1] not in word_dict:
         word_dict[word[-1]] = []
     word_dict[word[-1]].append(word)
