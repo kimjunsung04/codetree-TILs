@@ -7,6 +7,7 @@ for _ in range(int(input())):
 m_word = input()
 if m_word not in word_dict:
     print(0)
-print(len(word_dict[m_word]))
-for word in word_dict[m_word]:
-    print(word)
+else:
+    print(len(word_dict[m_word]))
+    for word in word_dict[m_word]:
+        print(word)
