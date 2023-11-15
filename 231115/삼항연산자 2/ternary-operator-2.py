@@ -1,2 +1,2 @@
-a = input()
-print("f" if a == 1 else "t")
+a = int(input())
+print("t" if a == 1 else "f")
