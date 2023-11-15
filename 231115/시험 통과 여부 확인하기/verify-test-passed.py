@@ -1,5 +1,5 @@
 n = int(input())
-if n >= 80:
+if n > 80:
     print("pass")
 else:
-    print(f"{n} more score")
+    print(f"{100-n} more score")
