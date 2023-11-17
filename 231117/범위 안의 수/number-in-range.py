@@ -1,2 +1,2 @@
 a = int(input())
-print(1 if a >= 10 and a <= 20 else 0)
+print("yes" if a > 10 or a < 20 else "no")
