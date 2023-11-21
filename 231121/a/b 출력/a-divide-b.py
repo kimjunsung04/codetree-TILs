@@ -1,2 +1,9 @@
 a, b = map(int, input().split())
-print(f"{a/b:.1f}{'0'*19}")
+remainder = a % b
+result = str(a // b) + "."
+for _ in range(20):
+    remainder *= 10
+    quotient = remainder // b
+    result += str(quotient)
+    remainder %= b
+print(result)
