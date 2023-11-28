@@ -1,6 +1,6 @@
 n = int(input()) 
 sum_val = 0
-for i in range(2, int(n ** 0.5) + 1):
+for i in range(1, n):
     if n % i == 0:
         sum_val += 1
-print("N" if n == sum_val else "P")
+print("N" if n == sum_val and n != 1 else "P")
