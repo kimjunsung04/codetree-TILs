@@ -1,3 +1,7 @@
-lines = [float(input()) for i in range(3)]
-for item in lines:
-    print(f"{item:.3f}")
+a = float(input())
+b = float(input())
+c = float(input())
+
+print(f"{a:.3f}")
+print(f"{b:.3f}")
+print(f"{c:.3f}")
