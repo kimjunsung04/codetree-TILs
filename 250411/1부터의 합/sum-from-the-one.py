@@ -5,3 +5,4 @@ for i in range(1, 101):
         print(i-1)
         break
     s_val += i
+print(100)
