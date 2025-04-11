@@ -1,4 +1,6 @@
 n = int(input())
 n_list = list(map(int, input().split()))
-even_list = reversed([i for i in n_list if i % 2 == 0])
-print(*even_list)
+
+for i in range(n-1, -1, -1):
+    if n_list[i] % 2 == 0:
+        print(n_list[i], end=' ')
