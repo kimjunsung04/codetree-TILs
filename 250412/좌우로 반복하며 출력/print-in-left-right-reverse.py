@@ -7,3 +7,4 @@ for i in range(n):
         row.reverse()
     for item in row:
         print(item, end="")
+    print()
