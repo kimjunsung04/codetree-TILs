@@ -8,4 +8,4 @@ def is_yn(n):
         return "true"
     return "false"
 
-print(is_onjeonsu(y))
+print(is_yn(y))
