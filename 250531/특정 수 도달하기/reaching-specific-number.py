@@ -5,4 +5,4 @@ for i in range(len(nums)):
         nums = nums[:i]
         break
 
-print(sum(nums), sum(nums)/len(nums))
+print(sum(nums), f"{sum(nums)/len(nums):.1f}")
