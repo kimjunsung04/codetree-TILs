@@ -1,15 +1,9 @@
-n_list = list(map(int, input().split()))
+p1, p2 = map(int, input().split())
 
-for i in range(10):
-    temp_num = 0
-    if i == 2:
-        temp_num = n_list[0]+n_list[1]
-    elif i > 2:
-        temp_num = n_list[i-2] + n_list[i-1]
-    else:
-        print(n_list[i], end=" ")
-        continue
-    if len(str(temp_num)) >= 2:
-        temp_num = int(str(temp_num)[-1])
-    n_list.append(temp_num)
-    print(n_list[i], end=" ")
+arr = [p1, p2]
+
+for i in range(2, 10):
+    arr.append((arr[i-2]+arr[i-1])%10)
+
+for i in arr:
+    print(i, end=" ")
