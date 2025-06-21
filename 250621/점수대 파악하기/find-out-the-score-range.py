@@ -3,7 +3,8 @@ n_list = list(map(int, input().split()))
 count_list = [0] * 10
 
 for i in n_list:
-    if i < 10: break
+    if i == 0: break
+    if i < 10: continue
     if i == 100:
         count_list[-1] += 1
     else:
